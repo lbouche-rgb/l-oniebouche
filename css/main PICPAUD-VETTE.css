@@ -1,0 +1,151 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; 
+    background-color: rgb(130, 181, 195); 
+    
+}
+
+#map-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /**/
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    /**/
+    cursor: grab;
+}
+#map-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+#map{
+    min-width:500px ;
+    max-width: 1500px;
+    min-width:500px ;
+    height: 1300px;
+    /**/
+    position: relative;
+    /**/
+    background-color: rgb(130, 181, 195);
+    overflow: hidden;
+}
+
+.box_elem{
+    position: absolute;
+    top: 250px;
+    right: 250px; ;
+    /**/
+}
+.div{
+    left: 100px;
+    /**/
+    height: 50px;
+    width: 500px;
+    padding:10px;
+}
+.div1{ 
+    left: 270px; 
+    /**/
+    height: 50px;
+    width: 100%;
+    padding:10px;
+}  
+.div2{ 
+    left:100px;
+    /**/
+    height: 300px;
+    width: 500px;
+    padding:10px;
+} 
+.div3{ 
+    left: 250px; ;
+    /**/
+    height: 300px;
+    width: 500px;
+    padding:10px;
+}
+#texte1{
+    position:absolute;
+    top: 250px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    z-index: 10; 
+    color:white  
+} 
+#texte2{
+    position: absolute;
+    top: 110px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    z-index: 10; 
+    color:whitesmoke
+}
+#texte3{
+    position: absolute;
+    top: 500px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    z-index: 10; 
+    color:whitesmoke
+}
+.elem{
+    image-rendering: optimizeQuality;
+    /**/
+    width: auto;
+    height: auto;
+    padding:10px;
+    /**/
+    background-image: url(/www_carte/src/img/element/);
+}
+#elem1{
+    position:absolute;
+    top: 265px;
+    right: 100px; 
+    background-color: whitesmoke; 
+}
+#elem2{
+    position:absolute;
+    top: 900px;
+    right: 25%;
+    
+}
+#elem3{
+    position:absolute;
+    top: 800px;
+    left: 100px; 
+    background-color: whitesmoke;
+}
+#elem4{
+    position:absolute;
+    top: 1300px;
+    right: -2800px;
+}
+.hidden{
+    display:none;
+}
+    #button{
+        background: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        top: 100px ;
+        left: 100px;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%; /* Makes it a perfect circle */
+        display: inline-block;
+        text-align: center;
+        padding-top: 40px;
+    }
+

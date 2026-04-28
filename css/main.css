@@ -1,0 +1,54 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items:center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;  
+  background-image:url(../src/img/back.jpg) ; /* chemin de ton image */
+  background-size: cover; /* adapte l'image à l'écran */
+  background-repeat: no-repeat; /* évite la répétition */
+  background-position: center; /* centre l'image */
+}
+map{
+    width: 1000px;
+    height: 1000px;
+}
+.circle{
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border-radius:50% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation:anim 10s linear infinite ;
+    color: whitesmoke;
+}
+@keyframes anim{
+0%{
+     transform: rotate(0deg);
+}
+100%{
+    transform: rotate(360deg);
+ }
+}
+.text span{
+    position: absolute;
+    left:50% ;
+    font-size: 25px;
+    transform-origin: 0 250px;
+}
